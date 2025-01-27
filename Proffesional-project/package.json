@@ -5,12 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev":"src/index.js",
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
     "start": "node index.js"
   },
   "author": "Gulshan Kumar",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.9.5"
   }
 }
